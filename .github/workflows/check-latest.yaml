@@ -14,7 +14,7 @@ jobs:
       extra-deps: ''
       
       # Additional R packages to install
-      r-extra-packages: 'vctrs'
+      r-extra-packages: ''
       
       # Additional R CMD check arguments
       check-args: '--no-manual --ignore-vignettes'
