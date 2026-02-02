@@ -17,4 +17,4 @@ jobs:
       r-extra-packages: ''
       
       # Additional R CMD check arguments
-      check-args: '--no-manual --ignore-vignettes'
+      check-args: '--ignore-vignettes'
