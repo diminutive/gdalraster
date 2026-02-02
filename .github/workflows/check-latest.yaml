@@ -11,7 +11,7 @@ jobs:
       ref: 'main'
 
       # Additional apt packages to install
-      extra-deps: 'sudo apt-get install r-base-dev'
+      extra-deps: 'r-base-dev'
 
       # Additional R packages to install
       r-extra-packages: 'vctrs'
