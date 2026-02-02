@@ -1,0 +1,20 @@
+name: Check GDAL Latest
+
+on:
+  workflow_dispatch:
+
+jobs:
+  gdal-latest:
+    uses: hypertidy/gdal-r-ci/.github/workflows/check-gdal-latest.yml@main
+    with:
+      # Git ref to checkout (branch, tag, SHA)
+      ref: 'main'
+      
+      # Additional apt packages to install
+      extra-deps: ''
+      
+      # Additional R packages to install
+      r-extra-packages: 'gt, vctrs'
+      
+      # Additional R CMD check arguments
+      check-args: '--no-manual --ignore-vignettes'
