@@ -11,10 +11,10 @@ jobs:
       ref: 'main'
       
       # Additional apt packages to install
-      extra-deps: ''
+      extra-deps: 'sudo apt-get install r-base-dev'
       
       # Additional R packages to install
-      r-extra-packages: ''
+      r-extra-packages: 'vctrs'
       
       # Additional R CMD check arguments
-      check-args: '--no-manual'
+      check-args: '--no-vignettes'
